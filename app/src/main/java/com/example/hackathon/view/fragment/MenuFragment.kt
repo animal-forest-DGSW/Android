@@ -28,7 +28,7 @@ class MenuFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        binding.
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

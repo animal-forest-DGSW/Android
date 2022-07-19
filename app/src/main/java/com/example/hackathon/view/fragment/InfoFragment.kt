@@ -10,10 +10,12 @@ import androidx.fragment.app.viewModels
 import com.example.hackathon.R
 import com.example.hackathon.databinding.FragmentHomeBinding
 import com.example.hackathon.databinding.FragmentInfoBinding
+import com.example.hackathon.databinding.FragmentMenuBinding
+import com.example.hackathon.viewmodel.InfoViewModel
 import com.example.hackathon.viewmodel.LoginViewModel
 
 class InfoFragment : Fragment() {
-    private val viewModel : LoginViewModel by viewModels()
+    private val viewModel : InfoViewModel by viewModels()
     private var _binding: FragmentInfoBinding? = null
 
     // This property is only valid between onCreateView and
@@ -26,10 +28,19 @@ class InfoFragment : Fragment() {
     ): View? {
         _binding = FragmentInfoBinding.inflate(inflater, container, false)
         return binding.root
+
     }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
     }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
