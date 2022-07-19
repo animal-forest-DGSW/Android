@@ -10,15 +10,6 @@ import androidx.fragment.app.viewModels
 import com.example.hackathon.R
 import com.example.hackathon.viewmodel.LoginViewModel
 
-class SignUpFragment : Fragment() {
+class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
     private val viewModel : LoginViewModel by viewModels()
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        // Inflate the layout for this fragment
-        Log.e("LoginFragment", "onCreateView: 실행 완료", )
-        return inflater.inflate(R.layout.fragment_login, container, false)
-    }
 }
