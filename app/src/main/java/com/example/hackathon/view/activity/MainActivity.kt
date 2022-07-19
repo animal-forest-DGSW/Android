@@ -10,8 +10,14 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupWithNavController
 import com.example.hackathon.R
 import com.example.hackathon.databinding.ActivityMainBinding
+import com.example.hackathon.view.fragment.HomeFragment
+import com.example.hackathon.view.fragment.InfoFragment
+import com.example.hackathon.view.fragment.MenuFragment
+import com.example.hackathon.view.fragment.ReportFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,6 +32,12 @@ class MainActivity : AppCompatActivity() {
         /*val navController = findNavController(R.id.nav_main)
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)*/
+
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.NavHostFragment) as NavHostFragment
+
+        val navController = navHostFragment.navController
+        binding.bottomNavigationView
+            .setupWithNavController(navController)
 
     }
 
@@ -50,4 +62,6 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
     }
+
+
 }
