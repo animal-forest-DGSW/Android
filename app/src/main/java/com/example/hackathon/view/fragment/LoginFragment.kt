@@ -12,15 +12,7 @@ import com.example.hackathon.R
 import com.example.hackathon.viewmodel.LoginViewModel
 import com.example.hackathon.viewmodel.MainActivityViewModel
 
-class LoginFragment : Fragment(){
+class LoginFragment : Fragment(R.layout.fragment_login){
     private val viewModel : LoginViewModel by viewModels()
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        // Inflate the layout for this fragment
-        Log.e("LoginFragment", "onCreateView: 실행 완료", )
-        return inflater.inflate(R.layout.fragment_login, container, false)
-    }
+
 }
