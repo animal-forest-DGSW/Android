@@ -1,4 +1,7 @@
 package com.example.hackathon.viewmodel
 
-class HomeViewModel {
+import androidx.lifecycle.ViewModel
+
+class HomeViewModel : ViewModel(){
+
 }

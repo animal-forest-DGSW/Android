@@ -1,4 +1,6 @@
 package com.example.hackathon.viewmodel
 
-class MenuViewModel {
+import androidx.lifecycle.ViewModel
+
+class MenuViewModel : ViewModel() {
 }
