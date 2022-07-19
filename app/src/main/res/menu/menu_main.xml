@@ -1,11 +1,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/breakingNewsFragment"
-        android:title="Home"
+        android:title="@string/info"
         android:icon="@drawable/ic_launcher_background"/>
     <item android:id="@+id/savedNewsFragment"
-        android:title="Saved News"
+        android:title="@string/home"
         android:icon="@drawable/ic_launcher_background"/>
     <item android:id="@+id/searchNewsFragment"
-        android:title="Breaking News"
+        android:title="@string/list"
+        android:icon="@drawable/ic_launcher_background"/>
+    <item android:id="@+id/ReportFragment"
+        android:title="@string/report"
         android:icon="@drawable/ic_launcher_background"/>
 </menu>
