@@ -7,14 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.hackathon.R
-import com.example.hackathon.databinding.FragmentLoginBinding
+import com.example.hackathon.databinding.FragmentApplyBinding
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
 class MainFragment : Fragment() {
 
-    private var _binding: FragmentLoginBinding? = null
+    private var _binding: FragmentApplyBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -25,7 +25,7 @@ class MainFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentLoginBinding.inflate(inflater, container, false)
+        _binding = FragmentApplyBinding.inflate(inflater, container, false)
         return binding.root
 
     }
@@ -33,9 +33,6 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnLogin.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
-        }
     }
 
     override fun onDestroyView() {

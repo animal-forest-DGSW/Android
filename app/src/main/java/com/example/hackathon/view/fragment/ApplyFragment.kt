@@ -19,7 +19,7 @@ class ApplyFragment : Fragment(){
     ): View {
         // Inflate the layout for this fragment
         Log.e("LoginFragment", "onCreateView: 실행 완료", )
-        return inflater.inflate(R.layout.fragment_login, container, false)
+        return inflater.inflate(R.layout.fragment_apply, container, false)
     }
 
 }

@@ -4,10 +4,10 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class LoginViewModel : ViewModel() {
-    private val id = MutableLiveData<String>()
-    private var pw = MutableLiveData<String>()
-
-    fun setText() : String{
-        return "안녕하세요"
+    val id = MutableLiveData<String>()
+    val pw = MutableLiveData<String>()
+    fun startMain(){
+    }
+    fun startSignUp(){
     }
 }

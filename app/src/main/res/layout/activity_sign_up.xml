@@ -39,8 +39,8 @@
             android:layout_height="match_parent"/>
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:text="회원가입"
+    <androidx.appcompat.widget.AppCompatButton
+        android:text="@string/text_sign_up"
         android:id="@+id/btn_login"
         app:layout_constraintTop_toBottomOf="@id/tl_pw"
         app:layout_constraintStart_toStartOf="parent"
