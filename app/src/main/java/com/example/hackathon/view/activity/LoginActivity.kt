@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.os.PersistableBundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -19,11 +20,9 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
         super.onCreate(savedInstanceState, persistentState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
-        setContentView(binding.root)
 
         val loginFragment = LoginFragment()
         val signUpFragment = SignUpFragment()
-
 
         supportFragmentManager.beginTransaction().apply{
             replace(R.id.flFragment,loginFragment)
@@ -31,6 +30,5 @@ class LoginActivity : AppCompatActivity() {
         }
 
 
-        val fragment = LoginFragment()
     }
 }
