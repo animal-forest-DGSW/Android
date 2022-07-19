@@ -12,7 +12,8 @@ class MenuAdapter(item: List<PetInfo>) : RecyclerView.Adapter<MenuAdapter.MenuVi
     val data = item
     inner class MenuViewHolder(val binding: ItemMenuBinding) : RecyclerView.ViewHolder(binding.root){
         fun bind(item: PetInfo){
-
+            binding.tvTitle.text = item.name
+            binding.tvContent.text = item.comment
         }
     }
 
@@ -24,7 +25,6 @@ class MenuAdapter(item: List<PetInfo>) : RecyclerView.Adapter<MenuAdapter.MenuVi
             // 뷰홀더에서 구현한 bindItem메서드를 호출해 뷰홀더에 아이템을 바인딩
             bind(data.get(position))
             //adapter에 넣어준 ArrayList 값들을 MyViewHolder에 값으로 넣어준다.
-
         }
     }
 
