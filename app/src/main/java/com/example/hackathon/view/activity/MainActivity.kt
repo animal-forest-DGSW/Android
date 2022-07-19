@@ -1,4 +1,4 @@
-package com.example.hackathon.view
+package com.example.hackathon.view.activity
 
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar

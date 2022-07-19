@@ -1,4 +1,4 @@
-package com.example.hackathon.view
+package com.example.hackathon.view.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.hackathon.R
-import com.example.hackathon.databinding.FragmentFirstBinding
 import com.example.hackathon.databinding.FragmentLoginBinding
 
 /**
