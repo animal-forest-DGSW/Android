@@ -2,4 +2,43 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph" />
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.hackathon.view.fragment.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_mainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.example.hackathon.view.fragment.ReportFragment"
+        android:label="ReportFragment" >
+        <action
+            android:id="@+id/action_reportFragment_to_mainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/applyFragment"
+        android:name="com.example.hackathon.view.fragment.ApplyFragment"
+        android:label="ApplyFragment" >
+        <action
+            android:id="@+id/action_applyFragment_to_mainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.hackathon.view.fragment.InfoFragment"
+        android:label="InfoFragment" />
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.hackathon.view.fragment.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_applyFragment"
+            app:destination="@id/applyFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+    </fragment>
+</navigation>
