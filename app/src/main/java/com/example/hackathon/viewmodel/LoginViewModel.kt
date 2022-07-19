@@ -6,8 +6,10 @@ import androidx.lifecycle.ViewModel
 class LoginViewModel : ViewModel() {
     val id = MutableLiveData<String>()
     val pw = MutableLiveData<String>()
-    fun startMain(){
+    fun startMain():Boolean{
+        return true
     }
-    fun startSignUp(){
+    fun startSignUp():Boolean{
+        return true
     }
 }
