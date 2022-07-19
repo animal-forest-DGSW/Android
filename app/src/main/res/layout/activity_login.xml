@@ -5,11 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fv_login"
+        android:name="com.example.hackathon.view.fragment.LoginFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <fragment
-            android:id="@+id/fragment_login"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-    </androidx.fragment.app.FragmentContainerView>
+        android:layout_height="match_parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
