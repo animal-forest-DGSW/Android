@@ -1,14 +1,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/infoFragment"
         android:title="@string/info"
-        android:icon="@drawable/ic_info"/>
+        android:icon="@drawable/slt_info"/>
     <item android:id="@+id/homeFragment"
         android:title="@string/home"
-        android:icon="@drawable/ic_home"/>
+        android:icon="@drawable/slt_home"/>
     <item android:id="@+id/menuFragment"
         android:title="@string/list"
-        android:icon="@drawable/ic_list"/>
+        android:icon="@drawable/slt_list"/>
     <item android:id="@+id/reportFragment"
         android:title="@string/report"
-        android:icon="@drawable/ic_report"/>
+        android:icon="@drawable/slt_report"/>
 </menu>

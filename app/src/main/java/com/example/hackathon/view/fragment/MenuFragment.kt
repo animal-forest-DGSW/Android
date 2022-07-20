@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.hackathon.R
 import com.example.hackathon.databinding.FragmentMenuBinding
+import com.example.hackathon.model.Info.PetInfo
+import com.example.hackathon.view.adapter.MenuAdapter
 
 class MenuFragment : Fragment() {
 
@@ -28,7 +30,6 @@ class MenuFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding.
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
