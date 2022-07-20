@@ -28,6 +28,16 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
+
+    override fun onStart() {
+        super.onStart()
+        binding.bigPetCard.setOnClickListener(View.OnClickListener {
+
+        })
+        binding.smallPetCard.setOnClickListener(View.OnClickListener {
+
+        })
+    }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
     }
