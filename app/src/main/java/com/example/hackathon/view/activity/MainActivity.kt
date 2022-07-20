@@ -10,14 +10,12 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import androidx.fragment.app.ListFragment
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.example.hackathon.R
 import com.example.hackathon.databinding.ActivityMainBinding
-import com.example.hackathon.view.fragment.HomeFragment
-import com.example.hackathon.view.fragment.InfoFragment
-import com.example.hackathon.view.fragment.MenuFragment
-import com.example.hackathon.view.fragment.ReportFragment
+import com.example.hackathon.view.fragment.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -39,6 +37,31 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNavigationView
             .setupWithNavController(navController)
 
+    }
+    fun changeFragment(index : Int){
+        when(index){
+            1 -> {
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(androidx.navigation.fragment.R.id.nav_host_fragment_container,MenuFragment())
+                    .commit()
+            }
+
+            2 -> {
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(androidx.navigation.fragment.R.id.nav_host_fragment_container,DetailFragment())
+                    .commit()
+            }
+            3 ->{
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(androidx.navigation.fragment.R.id.nav_host_fragment_container,
+                        ListFragment()
+                    )
+                    .commit()
+            }
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

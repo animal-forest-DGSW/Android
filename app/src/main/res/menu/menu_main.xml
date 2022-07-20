@@ -8,7 +8,7 @@
     <item android:id="@+id/menuFragment"
         android:title="@string/list"
         android:icon="@drawable/slt_list"/>
-    <item android:id="@+id/reportFragment"
-        android:title="@string/report"
-        android:icon="@drawable/slt_report"/>
+    <item android:id="@+id/applyFragment"
+        android:title="작성"
+        android:icon="@drawable/ic_create"/>
 </menu>

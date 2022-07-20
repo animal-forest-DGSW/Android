@@ -30,5 +30,9 @@
     <string name="text_title">제목</string>
     <string name="text_type">종류</string>
     <string name="text_apply">신청</string>
-
+    <string-array name="rv_list">
+        <item>wd</item>
+        <item>wd</item>
+        <item>wd</item>
+    </string-array>
 </resources>

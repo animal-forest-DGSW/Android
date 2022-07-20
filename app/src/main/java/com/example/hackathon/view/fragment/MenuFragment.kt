@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.hackathon.R
 import com.example.hackathon.databinding.FragmentMenuBinding
 import com.example.hackathon.model.Info.PetInfo
@@ -28,13 +29,14 @@ class MenuFragment : Fragment() {
 
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    override fun onStart() {
+        super.onStart()
+        binding.rvList.adapter = MenuAdapter()
+        binding.rvList.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL ,false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
     }
 
     override fun onDestroyView() {

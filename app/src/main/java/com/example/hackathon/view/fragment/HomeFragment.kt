@@ -9,6 +9,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.hackathon.R
 import com.example.hackathon.databinding.FragmentApplyBinding
 import com.example.hackathon.databinding.FragmentHomeBinding
+import com.example.hackathon.view.activity.MainActivity
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -31,10 +32,12 @@ class HomeFragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
-        binding.bigPetCard.setOnClickListener(View.OnClickListener {
+        val mActivity = activity as MainActivity
+        binding.bigPetCard.setOnClickListener(View.OnClickListener{
+            mActivity.changeFragment(2)
         })
         binding.smallPetCard.setOnClickListener(View.OnClickListener {
-
+            mActivity.changeFragment(2)
         })
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
