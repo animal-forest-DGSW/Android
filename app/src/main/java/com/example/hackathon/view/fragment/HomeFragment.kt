@@ -32,7 +32,6 @@ class HomeFragment : Fragment() {
     override fun onStart() {
         super.onStart()
         binding.bigPetCard.setOnClickListener(View.OnClickListener {
-
         })
         binding.smallPetCard.setOnClickListener(View.OnClickListener {
 
